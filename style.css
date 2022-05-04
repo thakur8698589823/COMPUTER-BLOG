@@ -1,0 +1,244 @@
+:root{
+    --bg-size: 100% 100%;
+    --main_color:white;
+    --title:sans-serif;
+    --font-para:serif;
+    --btn-color: #bbe1fa;
+    --btn-font-color:black;
+    --btn-font:1.5rem;  
+    --eff:.3s all ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: none;
+    box-sizing: border-box;
+}
+
+.navbar{
+    line-height: 50px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+   
+}
+.navbar a{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.navbar a:hover{
+    /* background-color:#076f7d ; */
+  
+    border-radius: 4px;
+    color: white;
+}
+
+.navbar .navbar-brand{
+    font-size: 35px;
+}
+.navbar-nav {
+    padding: 0 5px;
+}
+.nav-item .nav-link{
+    font-size: 17px;
+    text-transform: uppercase;
+    margin:0 15px;
+    font-weight: bold;
+    /* color: white;   */
+}
+
+.nav-item .nav-link:hover{
+    color: red;
+    /* background-color: red; */
+    /* border: 1px solid white; */
+
+}
+.navbar-collapse{
+margin-right: -50px;
+}
+
+.main_header__div{
+    height: calc(100vh - 30vh);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7) 50%,rgba(0,0,0,0)),url("./img/keybord.jpg");
+     background-size: var(--bg-size);
+ } 
+
+
+
+
+.main_header__div p{    
+    font-weight: bold;
+    font-size: 2rem;
+    /* font-family: var(--title); */
+    color: var(--main_color);
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-bottom: 0;
+    text-align: center;
+}
+.main_header__div h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    /* font-family: var(--title); */
+    color: var(--main_color);
+    position: relative;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+    transition: var(--eff);
+    margin-left: 20px;
+    text-align: center;
+}
+.blog_left__div h1{
+    /* font-family: var(--title); */
+    font-weight: bold;
+    font-size: 2rem;
+}
+.para{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 23px
+}
+.blog_left__div .right_side__img img{
+    margin-top: 0;
+}
+
+
+
+/* sidebar images */
+.left_div_blog h2{
+    font-weight: bold;
+   
+}
+.about_me_div img{
+    width: 300px;
+    height: 170px;
+    /* height: 300px; */
+}
+.about_me_div .sidebar_link {
+    font-size: 20px;
+    margin:15px 2px;
+}
+
+.about_me_div .sidebar_link a{
+    font-size: 20px;
+    margin:158px 2px;
+}
+
+/* sidebar 1 */
+.right_side__img1 img{
+    width: 150px;
+    /* margin: 30px 0; */
+  
+}
+.right_side__img1 p{
+    margin-top: 30px;
+}
+
+.blog_left__div .flex-column h1{
+    margin: 0;
+    padding-top: 0;
+}
+.right_side__img1 h2{
+    margin: 30px 0;
+}
+
+
+
+
+/* ========== contact us =========== */
+.section-section-contact{
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 1rem ;
+    margin-bottom: 2rem;
+    transition: all 0.3s linear;
+}
+.section-section-contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.grid {
+    display:flex;
+    gap: 2rem;
+}
+
+.section-section-contact input, .section-section-contact textarea{
+    padding: 5px 10px;
+    border: 0.1rem solid #c9c9c9;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: "work sans";
+    width: 100%;
+}
+
+.section-section-contact input[type=""]{
+    max-width: 30%;
+    border: none;
+}
+
+.section-section-contact .btn{
+    color:black;
+    background-color:rgba(35, 197, 247, 0.7); 
+    max-width: 30%;
+    border: none;
+
+}
+.section-section-contact .btn:hover{
+    color: white;
+}
+
+
+
+/* =========== footer =========== */
+
+footer .container h5{
+    color: white;
+    font-size: 25px;
+}
+
+footer .container p,
+footer .container a{
+    font-size: 17px;
+}
+footer .container p a:hover,
+footer .container a:hover,
+footer .container p li:hover{
+    background-color: #076f7d;
+    padding: 5px 5px;
+    border-radius: 4px;
+    color: white;
+}
+
+footer .container .author{
+    color: rgb(230, 224, 224); 
+    font-size: 15px;
+}
+
+footer .container .author a{
+    font-size: 15px;
+}
+
+
+
+/* scroll top */
+.scrollTop-style{
+     position: fixed;
+     right: 2%;
+     bottom: 5%;
+
+}
+.scroll-top1{
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #076f7d;    
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+
+}

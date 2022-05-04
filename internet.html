@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Tricks</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar -->
+        <nav class="navbar  navbar-expand-md navbar-dark bg-dark">
+
+            <div class="container">
+                <a href="" class="navbar-brand">Web<span class="text-danger">Technical </span></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarid">
+
+                    <ul class="navbar-nav text-center ml-auto ">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trobleshoot.html" class="nav-link ">TroBLESHOOT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="internet.html" class="nav-link ">Internet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="android.html" class="nav-link ">ANDROID</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link ">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Hero section -->
+        <div class="main_header__div d-flex align-self-start justify-content-center pl-5 flex-column shadow">
+            <h2 class="animatedWord">
+                <span>INTERNET TIPS & TRICKS</span>
+            </h2>
+            <p>Web Technical</p>
+        </div>
+
+    </header>
+
+    
+  <!-- Two side div -->
+
+  <div class="container-fluid section-hero">
+    <div class="row">
+
+      <!-- to get the left and right side div space -->
+      <div class="col-xl-12 col-lg-10 col-md-11 col-11 mx-auto my-5">
+        <div class="row gx-5 mx-sm-auto">
+
+          <!-- to get the left side of the div space -->
+          <div class="col-lg-10 col-md-11 col-11 mx-auto">
+            <div class="row gy-5">
+
+
+                    <!--1 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>1. Fixing Dns Prob. Finished Bad Config. Error</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"><b>Method 1: Release/Renew Ip Address.</b><br>
+                            In this Method, you will be releasing your ip address and then renewing it again. If the Problem is with
+                            your IP address then this method should work for you. Just Follow the Below Simple Steps.
+                            <br><br>
+                            Step 1: Open Command Prompt(cmd) By Pressing Combination of Windows key + R to open run. Now type in
+                            “cmd” and Hit Enter.<br>
+                            Alternatively, you can Press Windows Key + X , then Click on Command Prompt (Admin).
+                            <br>
+                            Step 2: Now that your Command Prompt is ready, Type in ipconfig /release then hit enter.
+                            <br>
+                            Step 3: Now again type in ipconfig /renew and hit enter. This will Renew your IP address.
+                            <br>
+                            Step 4: Close the Command Prompt and open your Favorite Browser to Check if the Problem is solved.
+                            <br><br>
+                            <b>Method 2: Flushing DNS.</b>
+                            <br> <br>
+                            In This Method We will Be Flushing DNS to Solve Error Code: DNS_PROBE_FINISHED_BAD_CONFIG. This will
+                            Most Probably Solve the issue if the Problem is in your DNS Cache. Follow below Steps.
+                            <br><br>
+                            1. First of all Open Command prompt.<br>
+                            2. No type in “ipconfig /flushdns” without Quotes and hit Enter.
+                            <br>
+                            3. You can see your dns is succuessfully Flushed.<br>
+            
+                            4. Open your Browser and see if the issue is still there or you have now fixed it.
+                            Alternatively instead of ipconfig /flushdns you can also type “netsh winsock reset catalog” and see if
+                            that works. Move on to the Next and Final Method if this doesn’t help.
+                            <br><br>
+                            <b> Method 3: Tweaking DNS Settings..</b>
+                            <br><br>
+                            1. If both of the above method didn’t helped you to fix DNS_PROBE_FINISHED_BAD_CONFIG error then Use
+                            this method. It Requires you to do minor Tweaking in your DNS Settings But In most cases this fixes the
+                            issue if done correctly. Follow the below Explained Steps.
+                            <br>
+                            2. Right Click on Network icon in taskbar then click on Open Network and Sharing Center.
+                            <br>
+                            3. Now from the Left pane, find and Click Change Adapter Settings. This will Open up Network
+                            Connections.<br>
+                            4. You will be presented with a new window with all Network Connections, Right Click on Active
+                            Connection and select Properties.<br>
+                            5. Now look for Internet Protocol Version 4 (TCP/IPv4), Double Click on it to open its Properties.
+                            <br>
+                            6. In the Properties Window, Click on Use the Following DNS Server Addresses and Type in 8.8.8.8 in
+                            Preferred DNS Server and 8.8.4.4 in Alternate DNS Server Just like shown in Below Picture. Then Click on
+                            OK.<br>
+                            Now Open your Browser and you will see that you have successfully Fixed Error Code
+                            DNS_PROBE_FINISHED_BAD_CONFIG now.<br><br>
+                            If any of the above method helped you, then take a second to let us know int he Comments below.
+                        </p>
+                       </div>
+                      
+                           <!--2 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>2. Use Whatsapp in Google Chrome Browser</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">Step 1: Click Here or Copy paste this URL https://web.whatsapp.com in the address bar of your Chrome
+                            browser and hit Enter..<br><br>
+                            Step 2: You will see QR Code which you will have to Scan from your Phone, So open Whatsapp on your
+                            Android, Go to Menu > Whatsapp Web and Scan that QR Code on your Computer Screen. If you don’t see
+                            Whatsapp Web option then you need to Update your Whatsapp.
+                            .<br><br>
+                            Step 3: Thats it you just need to Scan that QR Code to pair Whatsapp on your Phone and Whatsapp Web
+                            Client. If everything goes Right, then now you will be able to see your Messages on your Web Client in
+                            Google Chrome..<br><br>
+                            Remember to have UptoDate Version of Whatsapp on your Phone and also Keep in mind that your phone needs
+                            to be connected to internet in order to send and receive messages in your Web Client.
+                            .<br><br>Before you Go: <br>
+                            I would like to Share Couple of Pro tips that will make your experience better of using Whatsapp in
+                            Google Chrome..<br><br>
+            
+                            <b> Pro Tip 1: </b>Make a Desktop application of Whatsapp Web. Simply Go to https://web.whatsapp.com ,
+                            Then
+                            Click on 3 lines which are at right top corner of your Browser which says Customize and Control Google
+                            Chrome. <br>
+                            Now Scroll down and hover your mouse on More tools then Click on Create Application Shortcuts, a pop up
+                            will ask you where you want to store it on Desktop or Start menu or both. Select any of your Choice and
+                            Click on Create. <br>
+                            Thats it now you have it !!!.<br><br>
+            
+            
+                            <b> Pro Tip 2: </b>Pin the Web Client tab in your Chrome, Again just go to https://web.whatsapp.com,
+                            Once
+                            loaded, Right click on that tab and select “Pin Tab”, now that tab will be pinned to extreme left of
+                            your Computer Screen. You will also be able to see Notification Bubble on that pinned tab whenever you
+                            receive a new Message. <br>
+                            To unpin the tab, just right click on it again and click on Unpin the tab.
+                            So that is it for now, You learned how to Use Whatsapp in Google Chrome using Whatsapp web Client and
+                            Couple of Pro tip which i hope you will like it. So let me know what do you think about this update by
+                            whatsapp in the Comments below.
+            
+                        </p>
+                       </div>
+                      
+
+                           <!--3 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>3. How hackers hack Facebook Account & How to stop them?</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">Facebook is, undoubtedly, the most popular social networking website with more than 500 million active
+                            users. Due to its popularity, many hackers (or should I say crackers?) are actively involved in hacking
+                            Facebook accounts of unsuspecting users. This article outlines the many strategies that such hackers use
+                            to gain access to Facebook accounts of hundreds of users each day and how you can stop them from hacking
+                            your account.<br><br>
+                            hack facebook account<br><br>
+                            Facebook is one of the prime target of hackers!<br><br>
+            
+                            <b> Email Address Hack</b> <br>
+                            I have always been puzzled by Facebook’s leniency in this matter. All a hacker needs to do is know your
+                            name and he will be conveniently shown your email address at your profile. How easily a hacker can then
+                            hack your Facebook account (and everything else associated with that email id) if he ‘guesses’ your
+                            password (if you use a weak password) or answers your security question! This is something I hope
+                            Facebook improves on quickly. Until Facebook does so, here are some tricks you can use to protect
+                            yourself from this vulnerability.<br><br>
+            
+                            <b> How to safeguard your Email Address?</b> <br>
+                            Just follow these steps:-<br><br>
+                            Hide your Email Address from everyone by going to Edit Profile>Contact Information>Clicking on the icon
+                            beside your email address> checking ‘Only Me’.<br><br>
+                            Change your primary email address to a one that is only known to you by going to Account Settings>Email>
+                            and changing your primary email to the new one (known only to you) and removing your previous email
+                            address.<br><br>
+                            For additional security, when in Account Settings, check ‘Secure browsing’ and ‘Send me an email when a
+                            new computer or mobile device logs into this account’ and click Save.
+                            hack facebook<br><br>
+            
+                            <b> A hacker at work! <br>
+                                Phishing</b><br>
+                            Phishing is one of the easiest ways to trick users into giving out their login credentials. All a hacker
+                            does is setup a webpage similar in design to that of the Facebook homepage, attach a server sided script
+                            to track the username and password entered and store it in a log. Sending people emails stating that
+                            someone tagged a photo of them on Facebook in the same format as Facebook and giving a link below to the
+                            phishing website further reduces the chances of it being detected as a fake. Sometimes, spam Facebook
+                            apps, like those promising to tell who viewed your Facebook profile, automatically post links to
+                            phishing websites. A new trend amongst phishers is creating Facebook look-a-like widgets for stealing
+                            user’s login credentials.<br><br>
+            
+                            <b> How to prevent yourself from being phished?</b> <br>
+                            At all costs, avoid clicking on suspicious links. Moreover, always check the URL in the address bar
+                            before signing in. Avoid logging in through various “Facebook widgets” offered by websites and blogs.
+                            Instead, use Facebook’s homepage to sign in. Always try to use Safe Search while searching. If you do
+                            manage to get phished, report the website so that others may get a warning before visiting it.
+                            <br><br>
+                            <b> hack facebook password </b> <br>
+                            Keylogging through Keyloggers<br><br>
+                            Keylogger is a type of computer virus that tracks key strokes. Keyloggers can be installed remotely on a
+                            computer system by a cracker to record all the activity that is going on the victim’s computer.
+                            Keylogging gets more easy if the hacker has physical access to the victim’s computer.
+                            <br><br>
+                            <b> How to stop keyloggers? </b> <br>
+                            Install a good antivirus and update it frequently. Do not click on suspicious links and avoid
+                            downloading illegal software. Also, avoid installing free toolbars and other such spam software. Always
+                            scan third-person’s flash and pen drives before using them on your computer.
+                            Some more basic tips can be found here:PC Security tips to make computer secure
+                            <br><br>
+                            <b> Social Engineering</b> <br>
+                            Social engineering involves using any trick to fool the user into making himself vulnerable to exploits.
+                            This could involve anything from sending spoof emails, pretending to be from Facebook, telling you to
+                            change your password to 12345678 to a hacker maliciously getting out the answer to your security
+                            question in a friendly chat or discussion.<br><br>
+            
+                            <b> How to prevent yourself from being socially engineered?</b>
+                            <br>
+                            Stay aware during chats and discussions. Use a tough security question, preferably one whose answer you
+                            would never disclose to anyone. Moreover, Facebook, or any other company for that matter, will never ask
+                            you to change your password to 12345678 or do something as silly as asking you to send out your login
+                            details to prove that you are an active user. Always think before taking actions and your e-life on
+                            Facebook will be safe from hackers looking to hack Facebook accounts
+            
+                        </p>
+                       </div>
+                      
+
+                           <!--4 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>4. Facebook Scams and How to Tackle Them<</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">Online scams are ever increasing. Almost in every phase of the online world, you will come across scams.
+                            Social networks are no exception for such malicious activity. Recently, millions of accounts from
+                            LinkedIn and eHarmony were compromised. Facebook seeing danger has updated its security and is advising
+                            its users regarding various scams and how to fight them back.<br><br>
+            
+                            <b> Facebook Scams <br>
+                                1.‘Please send money scam’</b> <br>
+                            An unknown account sends a message stating that he/she has been mugged. Descriptions of events seem
+                            accurate including real names and places. Finally, the sender requests a certain sum, which will enable
+                            him/her to return home safely. <br>
+                            Facebook has attributed such scams as ‘Please send money scams’. The sender’s account is either fake or
+                            has been taken over by cyber criminals. On receiving ‘please send money scam’ messages, Facebook advices
+                            to report/block the account.<br><br>
+            
+                            <b> 2. Phishing </b> <br>
+                            Phishing is a common way to to hack account(s). Phishing links are sent within messages or through
+                            chats. <br><br>
+                            Phishing links through messages:<br><br>
+                            A message, which has scrambled words with funny fonts, is the first indication of a Phishing attack.
+                            Typo errors and misspelled words are other significant signs to look for. Such messages will be themed
+                            around offering gifts such as coins, jewels or any other artifacts. Finally, you will be asked to click
+                            on a link placed at the bottom of the message. Immediately report accounts who send such messages.
+                            <br><br>
+                            <b> Phishing links in chats: </b> <br>
+                            If any strange links appear while chatting, then beware. The account through which phished links
+                            appeared while chatting is probably compromised. Report the link immediately. However, doing so will not
+                            affect the account. Only the link will be considered for review by Facebook’s security team.
+                            <br><br>
+                            <b> What to do if I had clicked on Phishing link accidentally?</b> <br>
+                            If accidentally, a phishing link is clicked, go to password settings in your profile and change your
+                            password immediately. This will eliminate any Phishing threat. It is important to ensure that your new
+                            password is hard to crack.
+                            <br><br>
+                            <b> Malicious Script Scam</b><br>
+                            Often you will come across Facebook applications requesting to copy a certain script and paste it in
+                            your browser. Such scripts are malicious in nature. For instance, some applications will provide a list
+                            of your profile visitors when the script is pasted in your browser. Apart from showing recent visitors,
+                            these applications send events and messages to your friend list. These applications and scripts should
+                            be avoided. A screenshot of one such application is shown below:
+                            <br><br>
+                            <b> Malicious Scrip Scam <br>
+                                Suspicious emails:</b><br>
+                            Occasionally, some emails will request to reset your password, give a warning or will be about
+                            notifications. These mails are so convincing that they appear to be from Facebook. A request to click at
+                            the link provided at the bottom of the message should alert you. To check the validity of the link,
+                            right click and copy it. Later paste it on a separate tab and make sure that the URL starts as
+                            www.facebook.com. <br>
+                            Note: Facebook will never request your password through emails.
+                            <br><br>
+                            <b> Suspicious Notifications:</b> <br>
+                            Never click on links within suspicious notifications. For instance, you will receive a notification
+                            stating that you had requested a password reset albeit you never had requested. Other suspicious
+                            notifications include the ones notifying you of registration of a new Facebook account. With the help of
+                            your email provider, mark these mails as spam. <br>
+                            Cyber criminals are on the rise. It is your responsibility to safeguard your Facebook account. Next time
+                            you are using Facebook, be extra cautious.
+                        </p>
+                       </div>
+                      
+
+                           <!--5 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>5. Make Facebook Photos & Posts Private</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"> Do you have private pictures of yourself or your family on Facebook which you don’t want the entire
+                            world to see? This guide will help you change your Facebook privacy settings to only allow your friends
+                            or people you know to see your Facebook photos (and everything else you do). You can even customize the
+                            privacy settings of individual albums to share them with a small group of people like your co-workers or
+                            relatives.
+                            <br><br>
+                            <b> Make Facebook Photos & Posts Private</b>
+                            There are three ways in which you can do this. Either, you can customize each wall post’s or photo’s
+                            settings individually, or set the preferences for specific albums or use a general setting for all posts
+                            and photos you have.
+                            <br><br>
+                            <b> 1: Choosing an individual wall post’s or photo’s privacy settings </b>
+                            <br>
+                            While posting your photo or post, click on the down arrow left to the post button. Select Custom from
+                            the drop-down menu. Using the pop-up, select who you wish to make a post visible to. You can select if
+                            you wish to show a post to friends, friends of friends or specific people or a specific list of people.
+            
+                            <br><br>Make Facebook Photos Private <br><br>
+                            Select Custom Privacy Options <br><br>
+                            You can even hide a photo from specific people or a list of people. This will be especially useful in
+                            situations where you don’t want your colleagues to see a certain picture that makes fun of them or
+                            something similar. Normally, when someone is tagged in a photo, every friend of that Facebook user gets
+                            to know about it. So, if you chose to make a photo visible to friends and someone is tagged in that
+                            picture, all their friends will see that image. To prevent this, uncheck the Friends of those tagged
+                            checkmark.
+                            <br><br>
+                            Facebook Pictures & Posts Private
+                            <br><br>
+                            <b> 2: Limiting the Audience for an entire album</b> <br>
+                            This is much similar to setting the audience for an individual picture. Just go to your albums, click on
+                            the Settings icon on the bottom right of the album whose privacy settings you wish to customize. Then
+                            select Custom from the drop down menu. The options Facebook offers are almost the same as those for an
+                            individual photo, however there is one difference.
+                            Private Pictures Facebook Posts <br>
+                            All those people who are tagged and their friends would still be able to see the photos in your album.
+                            To prevent this, you will have to change the privacy settings of each individual photo.
+                            Facebook photos & posts privacy settings<br><br>
+            
+                            <b> 3: Making all your Photos and Posts Private</b> <br>
+                            This is the permanent solution against worrying about your Facebook content. However, it doesn’t offer
+                            much customization options and should only be used if you are sure how you will use Facebook. This is a
+                            2 step process and involves customizing the audience for your past posts as well as those you will make
+                            in future.
+                            <br><br>
+                            Step 1: Limiting Past Posts & Photos<br><br>
+                            Go to your Privacy Settings, and then go to “Limit the audience for posts you’ve shared with friends of
+                            friends or Public?.” Then click on the “Limit Old Posts” button. In the pop-up, click Confirm. This is a
+                            permanent change and cannot be undone. However, all those tagged and their friends would still be able
+                            to see your posts. To prevent this, you will have to change each post’s settings individually.
+                            <br><br>
+                            Step 2: Limiting Future Posts and Photos<br><br>
+                            Facebook Content & Photos Private<br><br>
+                            While in the privacy center, click on “Who can see your future posts?” This will open a non-functional
+                            status update box. However, the privacy options that open when clicking on the down arrow right next to
+                            the post button are functional and act as global defaults for the content you post on Facebook in the
+                            future. Make sure to select friends if you only wish to share content with your friends. You can
+                            however, change this according to your needs; but for most people, friends would be the best option. You
+                            can further improve your privacy by selecting Custom and then unchecking the check box that appears next
+                            to “Friends of those tagged”. This will customize your Facebook settings to show your Facebook activity
+                            only to your friends and those tagged.
+                            <br><br>You can also select who gets tagged in your content to further prevent your content from
+                            appearing in front of unwanted eyes. To do this, go to your Privacy Settings from the Settings icon
+                            located at the top right of the blue Facebook bar. Then, in Privacy Settings, click on Timeline and
+                            Tagging. Then under, “How can I manage tags people add and tagging suggestions?”, select Enabled to
+                            review tags that friends add to your posts.
+                            <br><br>Facebook’s privacy settings take some time to adjust but once you are done, you will never have
+                            to worry about your content ending up in front of unwanted users.
+            
+                        </p>
+                       </div>
+                      
+
+                           <!--6 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>6. Safety and Security Risks When Using Facebook</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">There is no doubt that the biggest social networking site taking over the whole globe is Facebook. Since
+                            it’s the biggest thing the online world has ever seen for the last several years, it’s critical that you
+                            understand the guidelines and policies listed on the site. They’re very useful in keeping you informed
+                            with various aspects of the site and how it runs.<br><br>
+                            You should know by now that for every website that you go to, there’s always a good chance of
+                            encountering good and bad users. Facebook can be accessed by just about anybody so it’s imperative that
+                            you are wise and conscious with how you distribute or share information about yourself on it (and other
+                            social networking sites for that matter).<br><br>
+            
+                            <b> Facebook Security Risks</b> br
+                            Identity theft is one of the biggest concerns in the online world today. They are real and can devastate
+                            a person’s life if the person isn’t aware of what’s going on.The internet is fun to be on nowadays since
+                            it helps you to keep in touch with your old and new friends, family and associates. You can share
+                            content such as pictures with anyone who has an internet connection, play games seamlessly through a
+                            virtual portal, being aware of announcements and updates of certain events and entertaining friend
+                            requests. Such things have prompted users to come back for more and what many aren’t aware of is the
+                            fact that they are vulnerable to online predators and criminals.
+                            <br><br>So what should you do to help protect yourself from the bad guys out there? Here are just some
+                            helpful
+                            things that can help you in the long run if you follow them religiously:
+                            <br><br>
+                            <b> 1. Understand how the security feature works on Facebook.</b>
+                            <br><br>
+                            As you are well aware, Facebook is known for periodically modifying its security settings. You will
+                            observe posts from the site of the changes being made with regards to its security features that lets
+                            other users see content that you don’t want them to view. It’s critical that you look into this
+                            carefully and see if the changes can significantly affect you in some way.
+                            <br><br>
+                            <b> 2. Don’t reveal too much information on Facebook.</b>
+                            One of the most obvious ways of getting in trouble within the biggest social networking site is by
+                            revealing too much information on just about everything (including yourself). You should be aware of the
+                            things that you’re sharing, be it your profile, wall posts, messages and even the content that you share
+                            such as pictures and videos. You’ll never know, criminals would use whatever it is you post for their
+                            own evil means.<br><br>
+                            <b> 3. Pay attention to links, e-mails or friends</b>
+                            Social networking sites these can be penetrated by online criminals who use sites like Facebook to gain
+                            information about you. This can occur through a sent or posted link, which will in turn eject a virus or
+                            spyware to retrieve personal information about you. If you happen to receive a link that you find
+                            suspicious, ask your friends about it or simply delete it.
+                            <br><br>With the evolution of technology, cyber criminals are more smarter than ever. If you are
+                            constantly
+                            paying attention for any suspicious activity that comes your way, you can shield yourself from identity
+                            theft and other online criminal acts.
+                        </p>
+                       </div>
+                      
+
+                           <!--7 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>7. Google Tricks, Easter Eggs & Secrets</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"> Google’s engineers love to hide some pretty cool tricks at the most unexpected places. Add to that
+                            Google’s policy of giving 20% of working time to its engineers to do what they want, and you have a
+                            search engine filled with lots of entertaining Easter eggs and tricks.
+                            <br><br> Sadly, most of these tricks are still a secret, but every now and then, Google employees leak
+                            these cool
+                            insider pranks and the whole world gets to know about them. Here, I have created a list of all such
+                            known Google tricks and Easter eggs that are still “working.”
+                            <br><br>
+                            <b> Google in 1998</b>
+                            <br>
+                            Search Google for “Google in 1998” and you will be taken to the past to a search results page that shows
+                            how Google looked in 1998.
+                            <br><br>
+                            <b> Kerning</b>
+                            <br>
+                            Kerning means adjusting the spacing between characters. So, how would you expect Google to describe it?
+                            Literally, off course. When you search Google for Kerning, the spacing of the word Kerning is changed as
+                            compared to that of other words. This only works with personalized results disabled.
+                            <br><br>
+                            <b> Conway’s Game Of Life</b>
+                            <br>
+                            Conway’s Game Of Life is a game that indicates how cellular life evolves based on the initial
+                            configuration. If you search Google for Conway’s Game of Life, you will get a results page with the game
+                            running in the background.
+                            <br><br>
+                            <b> Jason Isaacs</b> <br>
+                            Just search for Jason Isaacs and Google will return a page saying Hello to him. This only works on
+                            Google UK. This is a reference to Kermode and Mayo’s Film reviews which greets Jason with hello every
+                            week.
+                            <br><br>
+                            <b> Bacon Number {Actor Name}</b> <br>
+            
+                            Kevin Bacon is a famous hollywood actor who was quoted as saying that he has worked with everybody in
+                            hollywood or somebody who has worked with them in 1994. This led to many websites being launched about
+                            his claim in 2007. Bacon seeing this immense response launched a charitable website called Six Degrees,
+                            which is based on a theory that everyone in hollywood has worked with Kevin Bacon through a chain of six
+                            acquaintances or less. An actor gets as many degrees as he is distant from Kevin Bacon’s movies in terms
+                            of people in the chain of acquaintances. <br><br>
+                            Google too has now involved Six Degrees of Bacon in its search results. For example, searching Google
+                            for Bacon Number Johnny Depp gives Depp’s Bacon number to be 2.
+                            <br><br>
+                            <b> Google knows how to celebrate the holidays</b> <br>
+                            Searching Google for a holiday will make Google return a page decorated with items representing that
+                            holiday. For example, searching Google for Christmas returns a page decorated with Christmas lights.
+                            This also works for Kwanzaa, Hanukkah, Halloween and Festivus. These Easter Eggs based on a festival are
+                            only activated when that festival is near.
+                            <br><br>
+                            <b> Zerg Rush</b> <br>
+                            Search Google for Zerg Rush and you will see the O’s of Google attacking the search results page. They
+                            will attacking every result one by one. There is a health bar which indicates how injured a search
+                            result is. You can also kill these O’s by clicking on them. They also have health bars which indicates
+                            their health. You get points on the basis of how many O’s you kill. The aim of this game is to beat as
+                            many O’s as possible.
+                            <br><br>
+                            <b> Askew or Tilt</b> <br>
+                            Ever had the chance of searching Google for Askew or Tilt? If you have, then you already know what comes
+                            up. If you haven’t, do it now and you will see the search results page literally tilt to give you a
+                            better idea of what these words mean. This will work only if you use latest browsers which support HTML5
+                            and CSS3. So, Internet Explorer users, use Firefox, Google Chrome or Safari for a while to use this.
+                            <br><br>
+                            <b> Do a barrel roll</b> <br>
+                            ‘Do a barrel roll’ in its true sense means to do a 360 degree spin. Google takes practical
+                            demonstrations way too seriously for this one and literally spins the search results page to give you a
+                            clearer idea of the meaning of this phrase. Don’t believe me? Go search Google for Do a barrel roll now
+                            and see your world turn around.<br><br>
+                            This Easter egg is apparently a tribute to Star Fox, a video game series developed by Nintendo, because
+                            searching Google for Z or R Twice also does the barrel roll, just like in Star Fox. Many bloggers
+                            interpreted a lot of different things from this, but Google clarified that this fun trick was created by
+                            a Google Engineer solely for the purpose of entertaining users along with showing the power of new HTML5
+                            and CSS3 technologies. Like the previous Easter egg, this will only work in modern browsers.
+                            <br><br>
+                            <b> Binary, Octal and Hexadecimal Number systems</b> <br>
+                            Another one of those literal Google Easter eggs. If you search Google for “Binary”, “Octal” or
+                            “Hexadecimal” (without quotes) with Search Plus Your World disabled, Google will show the number of
+                            results in the same number system. For example, searching Google for hexadecimal will return the number
+                            of results like in the image below.
+                            <br><br>
+                            <b> Recursion</b> <br>
+                            The “Did you mean?” feature of Google often helps many users to get to the right results when they type
+                            something different from what they intended to search. If you search Google for recursion, the same
+                            feature takes you to an endless loop of clicks all linking to the same results page thereby completing
+                            recursion, which occurs when something calls itself. Seriously geeky.
+                        </p>
+                       </div>
+                      
+
+                           <!--8 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>8. Google - I'm Feeling Lucky Tricks & Jokes</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"> Google is the search engine of choice for most users. This is well represented by the fact that Google
+                            averages one billion unique visitors every month. A reason for this popularity is Google’s
+                            characteristic to integrate simplicity with usability.
+                            <br><br>
+                            Another major reason for this popularity is Google’s minimalistic homepage, which consists of a search
+                            bar and two buttons, Search and I’m Feeling Lucky. We all know what the search button does, it takes us
+                            to a search results page consisting of top ten results that match our query. The “I’m Feeling Lucky”
+                            button on the other hand takes you to the top ranking page in the search results for a particular query.
+                            <br><br>
+                            Some webpages use this behavior to create some amazing and funny results. Here is a list of few such
+                            keywords that have some funny websites at the first position in Google. To use these tricks, open
+                            Google’s homepage, type in the phrase and hit the I’m feeling lucky button. To use the I’m feeling lucky
+                            button, you have to disable Google Instant.
+                            <br><br>
+                            <b>   Google Gravity</b> <br>
+                            The force of gravity is non-existent in cyber space. Google gravity makes you realize how Google would
+                            have been if gravity had been effective on the internet as well. Just type Google gravity in the search
+                            bar and press the I’m feeling lucky button. This will take you to the Google gravity page which, at
+                            first look, might appear to be the Google homepage itself. Wait for a few seconds and you will realize
+                            why this Chrome experiment is called Google gravity. Although the website lists it as a Chrome
+                            experiment, it works on Mozilla Firefox as well, although it does not work on IE8 and previous versions
+                            of IE.
+                            <br><br>
+                            <b>   Google Sphere</b> <br>
+                            Want to see images on Google dance in circular motion? Google sphere is the phrase for that. This phrase
+                            will take you to the Google sphere Chrome experiment. Google sphere is a modified version of Image
+                            search that adds a bit of fun to your regular search. This Chrome experiment, just like the previous
+                            one, works on Chrome, Firefox and IE9.
+                            <br><br>
+                            <b>    Epic Google</b> <br>
+                            Epic Google will take you to a growing version of Google that will continue to increase in size until it
+                            becomes too large to read.
+                            <br><br>
+                            <b>  Enable Pirate language in Google</b> <br>
+                            Remember the Facebook Pirate language trick? Google too has their own pirate version to compete with
+                            that of Facebook’s. Just use the Google Pirate phrase or directly head over to Google Pirate.
+                            <br><br>
+                            <b>   Google Rainbow</b> <br>
+                            This phrase will take you to a Google search homepage in which each element changes its color rapidly to
+                            create the rainbow effect. The search result page obtained for queries is very annoying too as it
+                            contains a very loud color combination of red, blue and green.
+                            Annoying Google <br>
+                            Want to get annoyed while searching on Google? This one is for you. This phrase will take you to a
+                            Google search homepage with each word having alternate capital and small letters making everything a bit
+                            too hard to read.
+                            <br><br>
+                            <b>  2204355</b> <br>
+                            Are you already familiar with the age old internet prank called rick-rolling and want to discover
+                            something new? Chicken rolling is for you. Try this new way of trapping unsuspecting internet users by
+                            typing the code 2204355 in the Google search box and hitting the “Lucky button.”
+                            <br><br>
+                            <b>   LOL Limewire</b> <br>
+                            Type in LOL Limewire in Google and you will be taken to a .swf file claiming that you are a pirate and
+                            telling you to “do what you want cause a pirate is free.” Funny!
+                            <br><br>
+                            <b>   Find Chuck Norris</b><br>
+                            This one is for all fans of Chuck Norris jokes. We all know that you don’t find Chuck Norris, he finds
+                            you. The find Chuck Norris phrase proves the fact further.
+                            <br><br>
+                            <b> Who is the cutest?</b><br>
+                            Want to know who is the cutest person in the world? Just use this phrase. This one will definitely make
+                            you smile. <br>
+                            Most of these websites are not owned by Google. They were created independently to achieve these
+                            effects.
+                        </p>
+                       </div>
+                      
+
+                           <!--9 post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>9. How to Move a Blogger Blog to Your Own Domain: Tips and Tricks</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">What a week this has been for this tech blog! I finally moved it from blogspot subdomain to a custom domain. I have been wanting to do this since a long time (ever since this blog started getting some attention), I somehow couldn’t manage to do so because of the fear of losing search traffic.
+                            <br><br> Google’s recent move to redirect blogspot.com to country specific sub domains helped me solidify my decision to the extent of finally moving. I made a lot of other changes as well and have listed as much of them as possible as they might help some of you who are also planning to make the move. I have listed them in the order in which I made them.
+                            <br><br>1) Registered TweakAndTrick.com. 
+                            <br><br>
+                            2) Changed my domain’s settings to hide personal information from being displayed in the who is database.
+                            <br><br>
+                            3) Modified my domain’s CNAME and A records to correctly point to Google’s servers. Check this page from Blogger for details regarding this step.
+                            <br><br>
+                            4) Generally, it takes some time for your domain registrar to completely update the settings mentioned above. So, if you immediately point your new domain to your blog, users will see a 404 error. To avoid this, I created a new blogspot blog and modified its settings to point to my new domain.
+                            <br><br>
+                            5) When my domain correctly started loading the temporary blog, I modified this blog’s settings to link it to the new domain. Now my new domain was correctly loading my blog. While doing this, I made sure to select redirecting the non www version to the www one.
+                            <br><br>
+                            6) Downloaded my blog’s template and opened the downloaded XML file in Wordpad. I then used Wordpad’s Find and Replace function to replace each occurrence of tweakandtrick.blogspot.com with www.tweakandtrick.com and uploaded the modified template. This automatically changed all navigational links to use the new domain.
+                            <br><br>
+                            7) Some widgets still had links pointing to the blogspot subdomain. I changed them manually.
+                            <br><br>
+                            8) Went to Google Webmaster Tools, added my new domain and submitted the full sitemap. Normal Blogger feeds show only 20 URLs, so in order to submit all the URLs, I submitted a custom queried feed that includes 500 URLs.
+                            Normal Feed: /atom.xml	
+                            Feed I Submitted: /atom.xml?redirect=false&orderby=updated&max-results=500
+                            <br><br>
+                            9) Bing also brings considerable amount of traffic to this blog. So, I added the new domain to Bing Webmaster Tools and submitted the same sitemap.
+                            <br><br>
+                            10) Blogspot uses 301 permanent redirects to redirect visitors to new domains. This should have normally allowed Google to immediately index my new blog’s URLs but it did not. So, I resubmitted my old blog’s complete sitemap in Google Webmaster Tools. As the Blogspot blog had some authority in Google, GWT quickly processed the sitemap and immediately noticed that all those posts had moved to the new domain. This notified Google to index my content under the new domain and after almost 12 hours, my old blogspot URL’s started getting replaced by the new ones.
+                            <br><br>
+                            11) Notified readers of the move on Facebook and Twitter.
+                            <br><br>
+                            12) After making the move, my search traffic is way lower than normal. This should change and traffic should return to normal once search engines completely transfer my Blogspot subdomain’s trust and authority to this new one.
+                           
+                        </p>
+                       </div>
+
+        
+        
+                    </div>
+                </div>
+        
+        
+        
+                <!-- Right side post -->
+        
+                <!-- <div class="col-xl-3 col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto">
+                  <div class="row g5 left_div_blog">
+        
+                   <div class="col-12 about_me_div shadow">
+                     <p>Ankit Thakur</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam dolore vitae corporis veritatis ex optio voluptas? Dolorum, odit tempore!</p>
+                   </div>
+                  </div>        
+                </div>
+         -->
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+              
+<footer class="bg-dark text-white pt-5 pb4">
+  <div class="container text-center text--md-left"> 
+      <div class="row text-center text-md-left">
+       
+        <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">About us</h5>
+          <hr class="mb-4">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusamus rem labore necessitatibus aut quae eius consequuntur illo ipsa vero.</p> 
+
+        </div> -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">Quick links</h5>
+          <hr class="mb-4">
+          <p>
+            <a href="index.html" class="text-white" style="text-decoration: none;">Home</a>
+          </p>
+          <p>
+            <a href="trobleshoot.html" class="text-white" style="text-decoration: none;">Trobleshoot</a>
+          </p>
+          <p>
+            <a href="internet.html" class="text-white" style="text-decoration: none;">Internet</a>
+          </p>
+          <p>
+            <a href="android.html" class="text-white" style="text-decoration: none;">Android</a>
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">Information</h5>
+          <hr class="mb-4">
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">About us</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Disclamer</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Cookies</a>
+          </p>
+        </div>
+
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">follow us</h5>
+          <hr class="mb-4">
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-facebook"></li>Facebook</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-instagram"></li>Instagram</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-linkdin-in"></li>Linkdin</a>
+          </p>
+          <!-- <p>
+            <a href="#" class="text-dark" style="text-decoration: none;">Youtube</a>
+          </p> -->
+
+        </div>
+
+
+        <div class="col-md-4 col-lg-3 col-xl-3  mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">contact us</h5>
+          <hr class="mb-4">
+       
+          <p>
+           <a href="contact.html"> <li class="fas fa-envelope mr-3"> </li> ankit@gmail.com</a>
+          </p>
+          <p>
+            <li class="fas fa-home mr-3"> </li>India, Mumbai-401601
+          </p>
+          <!-- <p>
+            <li class="fas fa-phone mr-3" > </li> +91 1234123456
+          </p>
+          <p>
+            <li class="fas fa-print mr-3"></li> +91 1234123456
+          </p>
+           -->
+
+        </div>
+
+        </div>
+        <hr class="mb-4">
+        <div class="row d-flex justify-content-center">
+          <div>
+            <p class="author">
+              Copyright 2022 All Rights Reserved By :
+              <!-- <a href="#" style="text-decoration: none;"> -->
+                <strong class="text-info">The Providers</strong>
+              <!-- </a> -->
+            </p>
+          </div> 
+        </div>
+    </div>
+  </div>
+ </footer>
+ 
+ <div class="scrollTop-style">
+  <ion-icon name="arrow-up-outline" class="scroll-top1"></ion-icon>
+</div>
+  <script>
+
+    const herosection = document.querySelector(".section-hero")
+    let scrollElement = document.querySelector(".scrollTop-style");
+    console.log(scrollElement)
+    
+    const scrollTop =() =>{
+        herosection.scrollIntoView({behavior: "smooth"});
+    };
+    
+    scrollElement.addEventListener("click", scrollTop)
+    
+    
+    </script>
+        
+ </body>
+        
+</html>

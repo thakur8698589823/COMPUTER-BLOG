@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Tricks</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar -->
+        <nav class="navbar  navbar-expand-md navbar-dark bg-dark">
+
+            <div class="container">
+                <a href="" class="navbar-brand">Web<span class="text-danger">Technical </span></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarid">
+
+                    <ul class="navbar-nav text-center ml-auto ">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trobleshoot.html" class="nav-link ">TroBLESHOOT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="internet.html" class="nav-link ">Internet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="android.html" class="nav-link ">ANDROID</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link ">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Hero section -->
+        <div class="main_header__div d-flex align-self-start justify-content-center pl-5 flex-column shadow">
+            <h2 class="animatedWord">
+                <span>CMD TRICKS TO IMPRESS YOUR FRIENDS</span>
+            </h2>
+           
+        </div>
+
+    </header>
+
+    
+  <!-- Two side div -->
+
+  <div class="container-fluid section-hero">
+    <div class="row">
+
+      <!-- to get the left and right side div space -->
+      <div class="col-xl-12 col-lg-10 col-md-11 col-11 mx-auto my-5">
+        <div class="row gx-5 mx-sm-auto">
+
+          <!-- to get the left side of the div space -->
+          <div class="col-lg-10 col-md-11 col-11 mx-auto">
+            <div class="row gy-5">
+          
+                    <!--11  post -->
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1> 1) How to create a bootable USB flash drive</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"> 
+                          <b> Steps -:</b>  <br>    
+                            1. Insert your USB flash drive in to your computer. <br><br>
+                            2. Open the Command Prompt as an administrator.<br><br>
+                            3. Type diskpart on Command Prompt, press Enter Key and wait for few seconds.<br><br>
+                            4. Type list disk and press Enter. Note: You will see list of hard disk and flash drive connected to
+                            your
+                            computer, you need to select flash drive from list, and best way to recognize flash drive is to check
+                            the
+                            ca- pacity of disk shown in list, one that match your flash drive capacity, select that one.<br><br>
+                            5. Type select disk 1 (Make sure your disk 1 is flash drive) and press Enter.<br><br>
+                            6. Type clean and press Enter to wipe out everything.<br><br>
+                            7. Type create partition primary and press Enter.<br><br>
+                            8. Type select partition 1 and press Enter.<br><br>
+                            9. Type format fs=ntfs quick and press Enter. Note: If your server platform supports Unified Extensible
+                            Firmware Interface (UEFI), you should format the USB flash drive as FAT32 rather than as NTFS. To format
+                            the
+                            partition as FAT32, Type format fs=fat32 quick, and then press ENTER.<br><br>
+                            10. Type active and press Enter.<br><br>
+                            11. Type exit and press Enter. Note: do not close the command prompt, follow few more steps
+                            bellow.<br><br>
+                            12. Let's say My Flash drive or USB Drive is drive G: My DVD RW drive is drive D: Note: You can check of
+                            your own flash drive and DVD RW drive letter in your own computer.<br><br>
+                            13. Type D: (your DVD RW drive letter) and press Enter.<br><br>
+                            14. Type cd boot and press Enter.<br><br>
+                            15. You will see command prompt as your DVD RW drive letter\boot> For e.g. D:\boot><br><br>
+                            16. Type bootsect /nt60 G: and press Enter. Note: G: (put your computer USB flash drive letter). Type
+                            'exit'
+                            and press Enter to close the Command Prompt.<br><br>
+                            17. Copy and paste the operating system files to USB flash drive ON.
+            
+                          </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>2) How to delete temporary files</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">>
+                          - Open the commands prompt as an Administrator<br><br>
+                          - Type the commands bellow and press enter key after each commands
+                          rd /s /q %temp%
+                          Note: Type all the commands as soon as you turn on your PC for best working; sometime while using pc
+                          some other program might be using temp files; in that case restart pc and follow steps as soon as you
+                          restart
+                        </p>
+                    </div>
+
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>3) How to Fix WiFi internet connected but no internet access</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"> - open the command prompt as an adminis- trator, type the command bellow and press enter, finally
+                          restart your computer.
+                          netsh int ip reset resetlog.txt<br><br>
+                          -if the problem is not solved, open the command prompt as an administrator again, type the command
+                          bellow in order and press enter after typing each commands, finally restart your computer.
+                          - ipconfig /release<br><br>
+                          - ipconfig /all <br><br>
+                          - ipconfig /flushdns<br><br>
+                          - ipconfig /renew<br><br>
+                          - netsh int ip set dns<br><br>
+                          - netsh winsock reset <br><br>
+                          - netsh int ip reset resetlog.txt
+                        </p>
+                    </div>
+
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>4) How to find IP Address of any website</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"> 1. Open the command prompt<br><br>
+                          2. Type the commands bellow:<br><br>
+                          Ping facebook.com<br><br>
+                          tracert facebool.com<br><br>
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>5) How to find IP Address, Location, DNS of any internet Website</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">1. Visit the link Listed below: <br><br>
+                          https://www.site24x7.com/check-website -availability.html <br><br>
+                          https://www.iplocation.net/<br><br>
+                          2. Type the website URL for which you want to find IP Address, Location, DNS
+                          See the image bellow for a bit of help:
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>6) How to view Star WAR in ASCII code</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"> 1. Open Run, Shortcut key (windows key+R)<br><br>
+                          2. Type appwiz.cpl to open Add/Remove program<br><br>
+                          3. Click on Turn windows features on and off<br><br>
+                          4. Enable Telnet Client and TFTP Client <br><br>
+                          5. Open Command prompt as an Administrator<br><br>
+                          6. Type telnet and press enter<br><br>
+                          7. Type o and press enter<br><br>
+                          8. Type towel.blinkenlights.nl<br><br>
+                          Note: Internet connection is reequired.
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>7) How to create undeletable folder and unrenamable folder</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">             1. You can create undeletable and unrenam- able folder with these name: aux, con, Ipt1, Ipt2, Ipt3,
+                          Ipt4, Ipt5, Ipt6, Ipt7, Ipt8 and Ipt9<br><br>
+                          2. Open the command prompt.<br><br>
+                          3. You cannot create in C: drive so you can choose other hard disk drive like D:, E:<br><br>
+                          4. Type D: and press enter<br><br>
+                          5. Type md aux\ and press enter<br><br>
+                          6. Type rd aux\ and press enter to delete folder if you ever wish to delete, you cannot delete normally
+                          by clicking on delete
+          
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>8) How to change the Size, Font, Layout, color of the command prompt</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">- Right click on Top Title section of command prompt.<br><br>
+                          - choose properties from the drop down menu. <br><br>
+                          - There you can change the Size, Font, Layout, color of the command prompt
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>9) How to create wifi hotspots using command prompt</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"><b> Step 1</b>
+                          -You have to enable following features: <br><br>
+                          Allow other network users to connect through this computer's internet connection.<br><br>
+                          - To Enable in Windows 10, press Windows key + X<br><br>
+                          - Choose Network Connections<br><br>
+                          - Choose Ethernet or WiFi <br><br>
+                          - Click on change Adapter option on Right hand side <br><br>
+                          - You will see your new adaptor with hotspot name <br><br>
+                          - Right click on it and choose properties <br><br>
+                          - Check the box to enable Allow other network users to connect through this computer's Internet
+                          connection <br><br>
+                          <b> Step 2 </b><br><br>
+                          - Open the command prompt as an administrator.<br><br>
+                          - Type the following command, type yo hotspot name for ssid and your own pa for key<br><br>
+                          - netsh wlan set hostednetwork mode=Da ssid=Your_hotspot_name key=your_password<br><br>
+                          -In order to start hotspot, type following command <br><br>
+                          - netsh wlan start hostednetwork
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>10) How to hide and see folder and files using cmd</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">- Suppose I have one folder named apple in d drive, I want to hide <br><br>
+                          - Open cmd as an administrator and type the following command: <br><br>
+                          -At first type d: and press enter in order to get inside d drive, after then inside command prompt it
+                          should look like D:\><br><br>
+                          - Now type the command bellow to hide apple folder <br><br>
+                          - Attrib +h +s +r apple <br><br>
+                          - Type the command bellow to see apple folder <br><br>
+                          - Attrib-hsr apple
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>11) How to create a new folder using cmd </h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">- Type the following commands<br><br>
+                          mkdir New Folder <br><br>
+                          Note: New Folder is the name of folder, you can choose and name. If you see C:\> then folder will be
+                          created in c drive. If you see D:\> then folder will be created in d drive. You can change directory in
+                          command prompt, where ever you would like to create folder then after type commands to create
+                          folder.<br><br>
+                          Or<br><br>
+                          mkdir d:\other<br><br>
+                          - mkdir is make folder command, d:\ location where you would like to create folder, other is your folder
+                          name. you can follow the same procedure to create folder in any directory.
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>12) How to Open Telnet inside a command prompt using cmd </h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">- Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>     telnet</b><br><br>
+                           Note: Type ?/help to get further help with several Telnet commands<br><br><br>
+                        </p>
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>13) How to Open Display Properties using cmd </h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">- Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>  Utilman</b>
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>14) How to Open File Explorer or Windows Explorer using cmd</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">- Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>   Explorer</b>
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>15) How to Open Windows Boot Manager using cmd</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para"> - Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>   bcdedit</b>
+                        </p>
+                    </div>
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>16) How to Shut Down computer using cmd</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">-Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>   shutdown </b>
+                        </p>
+                    </div>
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1> 17) How to Open Sound and Audio using cmd </h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">-Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>   mmsys .cpl</b>
+                        </p>
+                    </div>
+
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>18) How to Open SQL Server Client Network Utility using cmd</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">-Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>  Cliconfg</b>
+                        </p>
+                    </div>
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1>19) How to Open System Configuration using cmd </h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">- Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>   msconfig</b>
+                        </p>
+                    </div>
+                    <div class=" col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex  flex-column pt-3 pb-3">
+                          <h1> 20) How to Open System Information using cmd</h1>
+                        </div>
+                       <figure class="right_side__img mb-5">
+                          <img src="" class="img-fluid shadow">
+                        </figure>
+                        <p class="para">- Open command prompt as an administrator, Type the following commands and press enter<br><br>
+                          <b>  msinfo32</b>
+                        </p>
+                    </div>
+                   
+
+                    </div>
+                </div>      
+                <!-- Right side post -->
+    
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+              
+<footer class="bg-dark text-white pt-5 pb4">
+  <div class="container text-center text--md-left"> 
+      <div class="row text-center text-md-left">
+       
+        <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">About us</h5>
+          <hr class="mb-4">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusamus rem labore necessitatibus aut quae eius consequuntur illo ipsa vero.</p> 
+
+        </div> -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">Quick links</h5>
+          <hr class="mb-4">
+          <p>
+            <a href="index.html" class="text-white" style="text-decoration: none;">Home</a>
+          </p>
+          <p>
+            <a href="trobleshoot.html" class="text-white" style="text-decoration: none;">Trobleshoot</a>
+          </p>
+          <p>
+            <a href="internet.html" class="text-white" style="text-decoration: none;">Internet</a>
+          </p>
+          <p>
+            <a href="android.html" class="text-white" style="text-decoration: none;">Android</a>
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">Information</h5>
+          <hr class="mb-4">
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">About us</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Disclamer</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Cookies</a>
+          </p>
+        </div>
+
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">follow us</h5>
+          <hr class="mb-4">
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-facebook"></li>Facebook</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-instagram"></li>Instagram</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-linkdin-in"></li>Linkdin</a>
+          </p>
+          <!-- <p>
+            <a href="#" class="text-dark" style="text-decoration: none;">Youtube</a>
+          </p> -->
+
+        </div>
+
+
+        <div class="col-md-4 col-lg-3 col-xl-3  mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">contact us</h5>
+          <hr class="mb-4">
+       
+          <p>
+           <a href="contact.html"> <li class="fas fa-envelope mr-3"> </li> ankit@gmail.com</a>
+          </p>
+          <p>
+            <li class="fas fa-home mr-3"> </li>India, Mumbai-401601
+          </p>
+          <!-- <p>
+            <li class="fas fa-phone mr-3" > </li> +91 1234123456
+          </p>
+          <p>
+            <li class="fas fa-print mr-3"></li> +91 1234123456
+          </p>
+           -->
+
+        </div>
+
+        </div>
+        <hr class="mb-4">
+        <div class="row d-flex justify-content-center">
+          <div>
+            <p class="author">
+              Copyright 2022 All Rights Reserved By :
+              <!-- <a href="#" style="text-decoration: none;"> -->
+                <strong class="text-info">The Providers</strong>
+              <!-- </a> -->
+            </p>
+          </div> 
+        </div>
+    </div>
+  </div>
+  </footer>
+
+  <div class="scrollTop-style">
+    <ion-icon name="arrow-up-outline" class="scroll-top1"></ion-icon>
+  </div>
+  
+  <script>
+
+    const herosection = document.querySelector(".section-hero")
+    let scrollElement = document.querySelector(".scrollTop-style");
+    console.log(scrollElement)
+    
+    const scrollTop =() =>{
+        herosection.scrollIntoView({behavior: "smooth"});
+    };
+    
+    scrollElement.addEventListener("click", scrollTop)
+    
+    
+    </script> 
+        
+        </body>
+        
+        </html>

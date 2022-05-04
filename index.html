@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips and Tricks</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <script src="index.js">async</script>                    
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- navigation bar -->
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+
+      <div class="container">
+        <a href="" class="navbar-brand">Web<span class="text-danger">Technical </span></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarid">
+
+          <ul class="navbar-nav text-center ml-auto ">
+            <li class="nav-item">
+              <a href="#" class="nav-link " >Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="trobleshoot.html" class="nav-link ">trobleshoot</a>
+            </li>
+            <li class="nav-item">
+              <a href="internet.html" class="nav-link ">internet</a>
+            </li>
+            <li class="nav-item">
+              <a href="android.html" class="nav-link ">android</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link ">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Hero section -->
+    <div class="main_header__div d-flex align-self-start justify-content-center pl-5 flex-column shadow">
+      
+          <!-- carousel -->
+      <!-- <div id="myslider" class="carousel slide" data-reide="carousel">
+          <div class="carousel-inner"> 
+              <div class="carousel-item active ">
+                  <img src="./img/keybord.jpg" alt="">
+                  <div class="carousel-caption">
+                    <h2>Computer tips and tricks</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, alias?</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/hacks.jpg" alt="">
+            </div>
+            <div class="carousel-item ">
+              <img src="./img/shortcuts.jpg" alt="">
+          </div>
+          </div>
+
+          <a href="#myslider" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#myslider" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+          <ul class="carousel-indicators">
+            <li data-target="#myslider" class="active" data-slide-to="0"></li>
+            <li data-target="#myslider" data-slide-to="1"></li>
+            <li data-target="#myslider" data-slide-to="2"></li>
+          </ul>
+      </div> -->
+     
+     
+     
+     
+      <h2 class="animatedWord">
+        <span>COMPUTER TIPS & TRICKS</span>
+      </h2>
+      <p>Web Technical</p> 
+    </div>
+
+
+
+  </header>
+
+
+  <!-- Two side div -->
+
+  <div class="container-fluid section-hero">
+    <div class="row">
+
+      <!-- to get the left and right side div space -->
+      <div class="col-xl-12 col-lg-10 col-md-11 col-11 mx-auto my-5">
+        <div class="row gx-5 mx-sm-auto">
+
+          <!-- to get the left side of the div space -->
+          <div class="col-lg-8 col-md-11 col-11 mx-auto">
+            <div class="row gy-5">
+
+              <!-- our first post code -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  align-items-center flex-column pt-3 pb-3">
+                  <h1>1) How to Block Some Websites from Opening on Your Computer</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/blockweb.jpg" class="img-fluid shadow">
+                </figure>
+                <p class="para">Maybe you are like me, I allow people to access the internet with my laptop. But you
+                  noticedthatthey
+                  visit some sites that you don’t like. Like some download sites, Youtube and other sites that consume
+                  much data. You can easily block any site from your computer using this awesome computer trick.
+                  <br>
+                  <br>
+                  hold the windows key + letter R, the Run box appears. <br>
+
+                  Type in this code <b>%windir%\system32\drivers\etc </b>in the Run box and hit the Enter key.This will
+                  open
+                  the
+                  etc folder.
+                  <br>
+                  <br>
+
+                  This etc folder contains a file called Host and some other files. We are interested in the Host file
+                  here.
+                  <br><br>
+                  But getting to the host file through the above step will not give you access to save your settings
+                  at
+                  the end of the day, I just want you to see the folder before following the right step.
+                  <br>
+                  <br>
+                  Click Start and search for notepad, right click on Notepad and select Run as administrator.
+                  <br><br>
+                  Look at the taskbar on notepad click on <b> File>Open>This Pc>Local Disk
+                    C:>Windows>system32>driver>etc</b>
+                  When you get to this etc folder, at the bottom of notepad open box change the Text Documents drop
+                  <br><br>
+                  Double click on Host and type the following code at the bottom of the page
+                  <br><br>
+                  127.0.0.2 website you want to block <br>
+                  127.0.0.3 www.website you want to block <br>
+                  127.0.0.4 another website you want to block <br>
+                  127.0.0.5 www.another website you want to block <br><br>
+                  You can follow the above pattern to add as many websites as you want.
+                </p>
+              </div>
+
+              <!-- second post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex   flex-column pt-3 pb-3">
+                  <h1>2) How to Add a Child or Adult User in Windows 10</h1>
+                </div>
+
+                <figure class="right_side__img mb-5">
+                  <img src="./img/2.png" class="img-fluid shadow">
+                </figure>
+                <p class="para">If you share your computer with family members or coworkers, you’re going to want each
+                  of them to have
+                  their own login. Each user gets their own desktop layout, their own set of data folders and their own
+                  Start menu. You can also create child accounts that restrict what websites and apps your kids can use,
+                  while reporting all of their activity to you. Here’s how to add adult users, parents and children in
+                  Windows 10. <br> <br>
+                  Navigate to Settings. You can get there from the Start menu and click Accounts. <br><br>
+                  Click Family & Other Users in the left window pane. <br> <br>
+                  Click “Add a family member” or “Add someone else to this PC.” Choose “family member” if you are either
+                  adding a child or adding an adult who needs access to parental control settings for child users. If no
+                  children are using this computer, using “Add someone else . . ” should be fine.
+                  How to To Give a User Admin Permissions<br> <br>
+                  If you want one of your adult users, whether they are a parent or not, to be able to install desktop
+                  software, change settings or add other users, you will need to give them admin permissions.<br> <br>
+                  Open control panel. You can get there by hitting Windows + X and selecting control panel.<br> <br>
+                  Open the User Accounts menu and click Manage another account.<br> <br>
+                  Select the account you wish to give admin rights to.<br> <br>
+                  Click “Change the account type.”<br> <br>
+                  Select Administrator and click the Change Account Type button.
+                  How to Add Another Adult User<br> <br>
+                  Click “Add someone else to this PC.”<br> <br>
+                  Enter the person’s email address and click Next.This address should be tied to the person’s Microsoft
+                  account.<br> <br>
+                  Click <b>Finish</b> <br> <br>
+                  How to Add a Child<br> <br>
+                  Click “Add a Family Member and then Select “Add a Child.”<br> <br>
+                  Enter the child’s Microsoft account email address. If they don’t have a Microsoft account, you must
+                  sign
+                  them up for one. If your child is too young to have an email address and you click “The person I want
+                  to
+                  add doesn’t have an email address,” you will be prompted to create a Microsoft account and
+                  corresponding
+                  @outlook.com email address for them. It’s unfortunate that Microsoft requires child accounts to have
+                  email, but parents can use their own email address or create a dummy one. <br> <br>
+                  Click <b> Confirm</b>.<br> <br>
+                  Click Close. The child’s email account will get an invite.<br> <br>
+                  How to Add a Parent<br> <br>
+                  A parent is like any other adult user, but they also have the right to manage the child settings.<br>
+                  <br>
+                  Click Add a Family Member and then Select Adult, enter the email address and click Next. The email
+                  account should be tied to the new user’s Microsoft account.
+                  Click Confirm.<br> <br>
+                  The person will receive an email invitation and have to confirm it.
+
+                </p>
+              </div>
+
+
+              <!-- third post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex lign-items-center flex-column pt-3 pb-3">
+                  <h1>3) How to Use Two Network Connections To Boost Your Internet Speed</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/internet speed.jpg" class="img-fluid shadow">
+                </figure>
+                <p class="para">
+                  This trick makes use of Network Bridging to combine two networks together. This will, as a result,
+                  leads
+                  to increase in internet speed. <br> <br>
+                  Open Control Panel and then go to Network and Sharing Center<br> <br>
+                  Select all the active connection (use CTRL + Click to select multiple connections) <br> <br>
+                  Right click on one of the selected connections and then choose Bridge Connections <br> <br>
+                  A network bridge will be created and thus your selected Internet connections will be combined.
+                </p>
+              </div>
+
+              <!-- OUR FOURTH POST -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  align-items-center flex-column pt-3 pb-3">
+                  <h1>4) How to make Your Computer Welcome You Whenever You turn It On</h1>
+                </div>
+
+                <figure class="right_side__img mb-5">
+                  <img src="./img/welcome.jpg" class="img-fluid shadow">
+                </figure>
+
+                <p class="para">Have you watched a movie and you hear a computer calling the name of someone during
+                  startup?<br> <br>
+                  open a ‘Notepad’ window and a type these lines<br> <br>
+                  <b> Dim speaks, speech<br> <br>
+                    speaks=”Welcome to your PC, Username”<br> <br>
+                    Set speech=CreateObject(“sapi.spvoice”)<br> <br>
+                    speech.Speak speaks </b><br> <br>
+                  Save the file under any name, but make sure to put in ‘.vbs’ followed by the file name e.g
+                  mechanic.vbs
+                  <br> <br>
+                  Click ‘windows start button’, and then ‘all programs’. Scroll down,and look for a folder with a name
+                  that says ‘Startup’.<br> <br>
+                  If you can not find the above mentioned folder try this line<br> <br>
+                  <b>C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup. </b> The appdata
+                  folder is
+                  hidden, so first unhide the hidden folders, then follow the address.<br> <br>
+                  Right click ‘Startup’ and click open. It’ll open this folder window for you. Just paste this file in
+                  this folder<br> <br>
+                  Turn off or restart your computer. If you followed the same steps without any mistake, your computer
+                  will speak whatever you typed.<br> <br>
+                  Turn off or restart your computer and see the magic
+                </p>
+
+              </div>
+
+
+
+
+              <!--  fifth post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>5) How to Delete Windows.Old</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/window_old.png" class="img-fluid shadow">
+                </figure>
+                <p class="para">Remove previous Windows installation files to free up hard drive space. If you’ve
+                  upgraded to a new
+                  version of Windows at some point, then a significant portion of your previous operating system’s files
+                  are likely still sitting on your hard drive in a folder named Windows.old. Deleting these files can
+                  free
+                  up some precious space.<br> <br>
+                  How to delete Windows.old in Windows 10, 8 or 7.<br> <br>
+                  Please follow the steps below to delete Windows.old in Windows 10, 8 or 7.<br> <br>
+                  Enter the following text in the Windows search field, located in the lower left-hand corner of your
+                  screen or accessible via the Start Menu button in older operating system versions: disk cleanup<br>
+                  <br>
+                  Click on the Disk Cleanup option, if necessary.<br> <br>
+                  The Disk Cleanup application should now appear, overlaying your desktop. Click the Clean up system
+                  files
+                  button.
+                  There will be a brief delay at this point, as Disk Cleanup analyzes your hard drive and calculates how
+                  much space it might be able to clear up. The length of this delay will vary based on the size of your
+                  drive and the amount of files currently stored on it.<br> <br>
+
+                  Once scanning and analysis is complete, the main Disk Cleanup window will re-appear with new options
+                  listed in the Files to delete: section. Locate the option labeled Previous Windows installation(s).
+                  This
+                  might be labeled Older versions of Windows instead, depending on your operating system. Place a check
+                  mark next to this option by clicking on its accompanying check box once.
+                  <br> <br>
+                  Remove the check marks next to other items in the list, unless you want to remove those from your hard
+                  drive as well.
+                  <br> <br>
+                  Click on the OK button to initiate the deletion process. Once complete, Windows.old and its contents
+                  should be completely removed from your PC.
+                </p>
+              </div>
+
+              <!--  six post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>6) How to Disable USB Ports On Your Computer</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/usb port.jpg" class="img-fluid shadow">
+                </figure>
+                <p class="para">It is possible to disable the USB ports on your computer.This will make your computer
+                  more secure.It can
+                  prevent unnecessary access to your files and protect your computer from malware that can come from USB
+                  connection.Please note that if you are using a keyboard or mouse that is connected to your computer
+                  through USB you should not try this trick because your keyboard or mouse will be disconnected.
+                  <br> <br>
+                  open up the Run box by holding Windows key plus R key and type Regedit.
+
+                  <br> <br>Go to USBSTOR by
+                  <br>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR
+                  <br> <br>
+                  look at the right-hand side and double-click Start.<br> <br>
+                  A box will open, in the value data box, replace 3 with 4 and click ok.
+                  You will notice that all USB ports on your computer are disabled.<br> <br>
+                  To enable the USB ports back, put 3 in place of 4 in the value data box.
+                </p>
+              </div>
+
+
+              <!-- seven post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>7) How to Increase Your Internet Speed to More Than 30%</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/internet.png" class="img-fluid shadow">
+                </figure>
+                <p class="para">You know that they are a lot of factors to be considered when it comes to internet
+                  speed.There are
+                  basically internal and external factors.Apart from your connections like cable, modem etc, you don’t
+                  have access to external factors.With this trick, you can boost the internet speed of your computer.
+                  Let
+                  get started.
+                  <br><br>
+                  Open Command Prompt as administrator. <br><br>
+                  Type in this code netsh int tcp show global press the Enter key
+                  <br><br>
+                  Open notepad and paste the following codes then save the document anything you want but make sure it
+                  ends with .bat. Save it on the desktop.
+                  <br> cd\
+                  netsh int tcp show global <br>
+                  netsh int tcp set global chimney=enabled <br>
+                  netsh int tcp set heuristics disabled <br>
+                  netsh int tcp set global autotuninglevel=normal <br>
+                  netsh int tcp set global congestionprovider=ctcp <br> <br>
+                  The above code will just change the tcp settings you see in the command prompt output.
+                  Remember to save with .bat extension.<br> <br>
+                  Run the file as an administrator and instantly you will see an increase in internet speed.
+
+                  <br> <br>If you want to change these TCP settings to their default, paste the code below into notepad
+                  and save it with .bat extension.
+                  Maybe something like reset.bat<br> <br>
+                  cd\<br>
+                  netsh int tcp show global<br>
+                  netsh int tcp set global chimney=default<br>
+                  netsh int tcp set heuristics enabled<br>
+                  netsh int tcp set global congestionprovider=none<br><br>
+                  This will return the tcp settings on your computer back to default.
+                </p>
+              </div>
+
+
+              <!-- eight post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>8) How to Set Up USB Tethering for Windows 10</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="" class="img-fluid shadow">
+                </figure>
+                <p class="para">Tethering your phone to your Windows 10 device is a simple process and can save you a
+                  ton of
+                  headaches.Tethering is the process of sharing your phone’s mobile data to access the internet on other
+                  devices, like a laptop. You can also tether using a Bluetooth or Wi-Fi connection, but USB Tethering
+                  is
+                  the fastest and most effective way to share your phone’s mobile data with other devices. That said, it
+                  generally won’t give you the types of speeds a solid Wi-Fi connection can. <br><br>
+                  How to Set Up USB Tethering<br><br>
+                  The process for setting up USB tethering is pretty streamlined on newer devices.
+                  <br><br>
+                  Connect your mobile device to your laptop through a USB cable connection. For most Android phones,
+                  this
+                  will use a USB-to-Micro USB cable. Apple phones will use the standard lightning cable.
+                  <br><br>
+                  Go to your phone’s settings and access your Wi-Fi/Network settings. The menu you will need to access
+                  could be listed under a few different options:
+                  <br><br>
+                  On Android: Open Settings, then tap More Networks > Tethering and on iOS: Open Settings, tap Personal
+                  Hotspot.
+
+                  <br><br> On Android, tap the checkbox next to USB Tethering to enable it. On iOS, tap the Personal
+                  Hotspot toggle to enable it.
+                  Your laptop should be able to access the internet through your phone’s mobile plan. To check if
+                  everything is working the way it should open your computer’s Network Settings once everything is
+                  tethered. When listing the available networks you should see the enabled network listed as “Remote
+                  NDIS
+                  based Internet Sharing Device,” or your device’s name.
+                </p>
+              </div>
+
+              <!-- nine post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>9) How to set up Windows Hello facial recognition on your laptop</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/face recognition.jpg" class="img-fluid shadow">
+                </figure>
+                <p class="para">You can log into your Window 10 laptop or tablet by looking at your webcam. Here’s what
+                  you need and how
+                  to set it up.Using your Windows 10 laptop or tablet’s built-in webcam, Hello uses facial recognition
+                  to
+                  get you in and working in under two seconds. It also works with more than a dozen apps like DropBox,
+                  iHeartRadio and OneDrive, so you can skip typing in a password. Unfortunately, not every webcam will
+                  work with Windows Hello. Your PC will need an infrared (IR) camera to use the feature, which are more
+                  common in new laptops and two-in-ones from the past couple years, including those from Dell, Lenovo
+                  and
+                  Asus.It’s really cool, and it works really well. If you have the right hardware, here’s how you can
+                  set
+                  up Windows Hello’s face login:<br><br>
+                  Open Settings and choose Accounts<br><br>.
+                  Click “Sign-in options” on the sidebar and scroll down to Windows Hello. Click “Set up” under Face but
+                  if you don’t have a PIN, you’ll need to set that up first. That’s located directly above Windows
+                  Hello.
+                  <br><br>
+                  Click Get Started and Enter your PIN.<br><br>
+                  Stare into the webcam while Windows Hello scans your face. This procedure will be quick.
+                  <br><br>
+                  Click Improve Recognition for additional scans, or close the setup process. If you wear glasses or a
+                  hat, we recommend that you scan your face with and without them on.
+                  <br><br>
+                  The next time you log in to Windows, the camera will be searching for your face.
+
+                </p>
+              </div>
+
+              <!-- tenpost -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>10) How To Shutdown Your Computer After A Specified Time</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/power off.jpg" class="img-fluid shadow">
+                </figure>
+                <p class="para"> This is a computer trick that gives you control on how long you will wait before your
+                  computer shutdown.
+                  <br><br>
+                  Open you CMD and type shutdown -s -t 30 in this 30 is the number of seconds you will wait before your
+                  computer shutdown and it is a variable ie you can put any number you want.
+                  <br><br>
+                  You will see a warning during this waiting time indicating that your computer will shutdown soon.
+                  <br><br>
+                  -t is the timer switch.
+                  <br><br>
+                  You can stop this computer from shutting down when the countdown hasn’t reached 0 by typing shutdown
+                  -a
+                  and hit enter.
+                  <br><br>
+                  How to shutdown a remote computer Using Command Prompt
+                  <br><br>
+                  The code is shutdown -s -m\\Computer Name.
+                  <br><br>
+                  You should know that Computer Name is the name of the computer you want to shutdown.
+                  <br><br>
+                  You view the names of the computers you are connected to by typing net view in the command prompt
+                  window.
+                  <br><br>
+                  Before you can shutdown a remote computer, you must have admin previlage on that computer.
+                  <br><br>
+                  If you are not sure about that then open Run box, type the computer name and hit enter.
+                  <br><br>
+                  Know that the login details username/password will be required if you can connect to the system.
+                  <br><br>
+                  If you can provide the login details then you will see the directories of the system which is the
+                  confirmation that you can shutdown the system remotely.
+
+                </p>
+              </div>
+
+              <!-- 11 post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>11) How to Silence Notifications in Wondow 10</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/111.PNG " class="img-fluid shadow">
+                </figure>
+                <p class="para">Formerly known as Quiet Hours, Focus Assist is a redesigned April 2018 Update feature
+                  that gives you
+                  greater control over the notifications that pop up on your PC. Head to Settings > System > Focus
+                  Assist
+                  and then read our full how-to guide for customizing notifications for everything from contacts and
+                  apps
+                  to task-specific alarms.
+                </p>
+              </div>
+              <!-- 12 post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>12) Speed Up Windows 10 By Disabling Startup Programs</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="" class="img-fluid shadow">
+                </figure>
+                <p class="para">Normally, the more applications enabled in your startup, the longer the boot up process
+                  can be. However,
+                  you can select which applications are part of the startup process to speed things up.
+                  <br><br>
+                  Right-click the Taskbar at the bottom of your screen, then select Task Manager.
+                  <br><br>
+                  Once Task Manager opens, select the Startup tab.
+                  <br><br>
+                  Select the program(s) you’d like to disable and select Disable at the bottom of the window.
+                  <br><br>
+                  Optimize Windows 10 By Running a Disk CleanUp
+                  <br><br>
+                  Running the Disk Cleanup utility will not only free up space on your hard drive; it also speeds things
+                  up since you gain more resources back for Windows 10 to use.
+                  <br><br>
+                  Enter “Disk Cleanup” into the Windows search bar, then select Disk Cleanup from the search results.
+                  <br><br>
+                  Select the files you’d like to clean up, then select OK.
+                  <br><br>
+                  The window will close automatically once the clean up is done, but you can clean up more space by
+                  launching Disk Cleanup again, then select Clean up system files.
+                  <br><br>
+                  You need administrative rights to clean up system files.
+                  <br><br>
+                  Once Disk Cleanup loads again, select the system files you’d like to clean up, then select OK.
+                  <br><br>
+                  Once the system clean up is done the window will close automatically, but the files will not be
+                  completely removed from your device until the next restart.
+                </p>
+              </div>
+
+
+              <!--13 post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>13) Turn off Automatic Updates Using Windows Update Settings</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/automatic updat.jpg" class="img-fluid shadow">
+                </figure>
+                <p class="para">Open the start menu and launch Windows Update. <br><br>
+                  Select Advanced Options <br><br>
+                  To Pause updates, set the Pause Updates toggle switch to On and updates will be paused.
+                  <br><br>
+                  To defer updates instead, select the desired Window Update servicing channel from the first dropdown
+                  menu, then set how long you’d like to defer the Feature Updates and the Quality Updates.
+                  <br><br>
+                  Enjoy a Windows 10 device with updates temporarily disabled.
+                  <br><br>
+                  Stop the Windows 10 Update Service
+                  <br><br>
+                  Press Windows key+R. Once the Run window launches, type “services.msc” and select OK.
+                  <br><br>
+                  find and select Windows Update, then select the Stop icon to stop the service.
+                  <br><br>
+                  Once the service has stopped, right-click Windows Update and select Properties.
+                  <br><br>
+                  In the Properties window, select the Startup type dropdown menu, then select Disabled. Select Apply,
+                  then select OK. <br><br>
+                  Exit the Services window and enjoy your Windows 10 device free of updates.
+
+                </p>
+              </div>
+
+
+              <!-- 14 post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>14) Skype Starts Automatically</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="" class="img-fluid shadow">
+                </figure>
+                <p class="para">Skype opens automatically each time your computer starts and you log in to your user
+                  account. This
+                  happens so that you can always get instant notifications when someone sends you a message or calls
+                  you.
+                  When you disable Skype on startup, you have to manually open it the first time you want to use it
+                  after
+                  starting your computer. Once it’s open, it will remain open like normal — and messages and calls can
+                  come in — until you sign out or close it down. The procedures we outline below work for current
+                  versions
+                  of Skype running on Windows 10, Windows 8, and macOS. Skype for Windows 10 and for Windows 8 can be
+                  configured to stop starting automatically with Windows. However, depending on how you installed the
+                  program, the steps for disabling the auto-start feature is different.
+                  <br><br>
+                  <u>Standard Skype Program</u><br><br>
+                  If you installed the standard Skype program in Windows 10 or Windows 8 (through Skype.com), open the
+                  Skype settings to disable the auto-start feature.<br><br>
+                  Select the three-dotted menu next to your name on the main page and choose Settings.
+                  <br><br>
+                  Go to General and toggle Automatically start Skype to the off position (the button will turn grey).
+                  <br><br>
+                  Exit the settings screen.
+                  <br><br>
+                  macOS: Remove Skype From the Login Items<br><br>
+                  There are a couple of ways to disable autorun for Skype on a Mac. The first and easiest method is to
+                  do
+                  so from the Dock.<br><br>
+                  1> Right-click the Skype icon from the Dock and go to Options.
+                  <br>
+                  2> Open System Preferences and select Users & Groups.
+                  <br>
+                  3> Select your user name and open the Login Items tab.
+                  <br>
+                  4> Select Skype and select the minus/remove button at the bottom of the screen
+                </p>
+              </div>
+
+
+              <!-- 15 post -->
+              <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1>15) How to recover deleted files from USB flash drive</h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="./img/data recovery.jpg" class="img-fluid shadow">
+                </figure>
+                <p class="para">USB flash drives are great backup tool used to store and transfer their data. Sometimes,
+                  files on your
+                  USB drive may be corrupted or you accidentally deleted your files. Today we are going to show you how
+                  to
+                  recover deleted files from USB drive.<br><br>
+                  <u>Reasons for USB data loss</u><br><br>
+                  1) Another program deleted the file.<br>
+                  2) Mistakenly or intentionally deleted the file from the USB drive.
+                  <br>
+                  3) Unplugged USB drive during transfer process.<br>
+                  4) File corruption due to virus attacks.<br>
+                  5) Fragmented partition structure on the USB flash drive.
+                  <br><br>
+                  Deleted files on the USB drive cannot be restored in the Recycle Bin unlike files deleted from the
+                  local
+                  disk/disk drive.<br><br>
+                  Use a Data Recovery Tool to recover files from the USB drive
+                  <br><br>
+                  You can use data recovery tools as well to recover deleted files from your USB drive. Recovery tools
+                  are
+                  computer programs which are used to recover permanently deleted files on your Windows PC. There are
+                  several recovery tools in the computer world, some of which are free and others are largely premium.
+                  However, these tools scan your USB drive using an efficient algorithm and recover deleted files and
+                  folders on your USB drive. We strongly recommend you SysTools Pen Drive Recovery in order to perform
+                  this action. This tool will recover corrupted and deleted videos, images, documents and music files.
+                  But
+                  this is not the only feature it has. You will be able to recover files from exFAT, FAT, and NTFS,
+                  recover your data with its initial attributes, recover data not only from your USB drive but also from
+                  memory cards and pen drives.<br><br>
+                  Use Command Prompt to recover hidden files from USB<br><br>
+                  The simplest way to recover deleted files from a USB drive is to use Command Prompt. Command Prompt is
+                  a
+                  Windows application available in all Windows Operating System.
+                  <br><br>
+                  Plug your USB drive (where the files were deleted from), and then press Windows and “R” keys to launch
+                  the Run Program.<br><br>
+                  >> Type “cmd” and hit “Enter” key to open Command Prompt window.
+                  <br>
+                  >> In the Command Prompt window, type chkdsk H: /f and hit “Enter” key (Replace H with the drive
+                  letter
+                  of
+                  the USB drive). <br>
+                  >> Now, type Y and hit the “Enter” key to proceed letter) and hit the “Enter” key.
+                  <br>
+                  >> Type H (replace H with the USB drive again.
+                  <br>
+                  >> Finally, type H:>attrib -h -r -s /s /d *.* and hit the Enter key (Replace H with the drive letter
+                  of
+                  the
+                  USB drive).
+                  <br><br>
+                  Wait for the process to be completed.<br><br>
+                  After this procedure, you will find all deleted files on a newly created folder on your USB drive. But
+                  you can change the file extension back to a normal format so as to make those found files functional
+                  again. However, ensure you replace “E” with the drive letter of the USB drive in steps 3 and 6 above.
+                  You can also try out this fix on your SD, HD, or another external storage device.
+
+                </p>
+              </div>
+
+
+              <!-- last post -->
+              <!-- <div class=" col-12 card p-4 shadow blog_left__div">
+                <div class="d-flex  flex-column pt-3 pb-3">
+                  <h1></h1>
+                </div>
+                <figure class="right_side__img mb-5">
+                  <img src="" class="img-fluid shadow">
+                </figure>
+                <p class="para">
+                </p>
+              </div> -->
+
+
+
+
+
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto">
+            <div class="row g5 left_div_blog">
+              <h2 class="">RELATED POST</h2>
+              <!-- about me -->
+              <div class="col-12 about_me_div shadow">
+                <a href="sidebar1.html">
+                  <img src="../img/shortcuts.jpg" alt="">
+                </a>
+                <div class="sidebar_link">
+                  <a href="sidebar1.html" class=" mt-10">A to Z keybord shortcuts key</a>
+                </div>
+              </div>
+
+
+              <div class="popular-post">
+                <br>
+                <div class="col-12 about_me_div shadow">
+                  <a href="sidebar2.html">
+                    <img src="../img/cmd.jpg" alt="">
+                  </a>
+                  <div class="sidebar_link">
+                    <a href="sidebar2.html" class=" mt-10">Cmd trick to impress your friend</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-post">
+                <br>
+                <div class="col-12 about_me_div shadow">
+                  <a href="sidebar3.html">
+                    <img src="../img/hacks.jpg" alt="">
+                  </a>
+                  <div class="sidebar_link">
+                    <a href="sidebar3.html" class=" mt-10">Computer Hacks</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+<footer class="section-footer bg-dark text-white pt-5 pb4">
+    <div class="container text-center text--md-left"> 
+        <div class="row text-center text-md-left">
+         
+          <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">About us</h5>
+            <hr class="mb-4">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusamus rem labore necessitatibus aut quae eius consequuntur illo ipsa vero.</p> 
+
+          </div> -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">Quick links</h5>
+            <hr class="mb-4">
+            <p>
+              <a href="index.html" class="text-white" style="text-decoration: none;">Home</a>
+            </p>
+            <p>
+              <a href="trobleshoot.html" class="text-white" style="text-decoration: none;">Trobleshoot</a>
+            </p>
+            <p>
+              <a href="internet.html" class="text-white" style="text-decoration: none;">Internet</a>
+            </p>
+            <p>
+              <a href="android.html" class="text-white" style="text-decoration: none;">Android</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">Information</h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">About us</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Disclamer</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Cookies</a>
+            </p>
+          </div>
+
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">follow us</h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-facebook mr-3"></li>Facebook</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-instagram mr-3"></li>Instagram</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;"><li class="fab fa-linkedin mr-3"></li>Linkdin</a>
+            </p>
+            <!-- <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">Youtube</a>
+            </p> -->
+
+          </div>
+
+
+          <div class="col-md-4 col-lg-3 col-xl-3  mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">contact us</h5>
+            <hr class="mb-4">
+         
+            <p>
+             <a href="contact.html"> <li class="fas fa-envelope mr-3"> </li> ankit@gmail.com</a>
+            </p>
+            <p>
+              <li class="fas fa-home mr-3"> </li>India, Mumbai-401601
+            </p>
+            <!-- <p>
+              <li class="fas fa-phone mr-3" > </li> +91 1234123456
+            </p>
+            <p>
+              <li class="fas fa-print mr-3"></li> +91 1234123456
+            </p>
+             -->
+
+          </div>
+
+          </div>
+          <hr class="mb-4">
+          <div class="row d-flex justify-content-center">
+            <div>
+              <p class="author">
+                Copyright 2022 All Rights Reserved By :
+                <!-- <a href="#" style="text-decoration: none;"> -->
+                  <strong class="text-info">The Providers</strong>
+                <!-- </a> -->
+              </p>
+            </div> 
+          </div>
+
+          <!-- <div class="row d-flex justify-content-center">
+            <div class="text-center list-inline ">
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"><li class="fab fa-facebook"></li></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"><li class="fab fa-twiter"></li></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"><li class="fab fa-google-plus"></li></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"><li class="fab fa-linkdin-in"></li></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-dark"><li class="fab fa-instagram"></li></a>
+              </li>
+
+            </div>
+          </div> -->
+
+
+        </div>
+    </div>
+</footer>
+
+<div class="scrollTop-style">
+  <ion-icon name="arrow-up-outline" class="scroll-top1"></ion-icon>
+</div>
+
+
+<script>
+
+const herosection = document.querySelector(".section-hero")
+let scrollElement = document.querySelector(".scrollTop-style");
+console.log(scrollElement)
+
+const scrollTop =() =>{
+    herosection.scrollIntoView({behavior: "smooth"});
+};
+
+scrollElement.addEventListener("click", scrollTop)
+
+
+</script>
+
+
+</body>
+
+</html>
